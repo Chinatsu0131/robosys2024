@@ -11,11 +11,11 @@ res=0
 
 rm -f memo.txt
 
-./memo.py "買い物リスト"
+./memo "買い物リスト"
 out=$(cat memo.txt)
 [ "$(echo "$out" | grep '買い物リスト')" != "" ] || ng "$LINENO"
 
-./memo.py "todolist"
+./memo "todolist"
 out=$(cat memo.txt )
 [ "$(echo "$out" | grep 'todolist')" != "" ] || ng "$LINENO"
 
