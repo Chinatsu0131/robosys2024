@@ -24,11 +24,11 @@ out=$(./memo)
 [ "$(echo "$out" | grep 'todolist')"  != "" ] || ng "$LINENO"
 
 out=$(./memo "")
-[ "$?" != "1" ] || ng "$LINENO"
+[ "$?" = "1" ] || ng "$LINENO"
 
 rm -f memo.txt
 out=$(./memo)
-[ "$(echo "$out" | grep 'まだメモはないよ！')" != "" ] || ng "$LINENO"
+[ "$(echo "$out" | grep 'まだメモはないよ!')" != "" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
 exit "$res"

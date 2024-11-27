@@ -19,7 +19,7 @@ def display():
         print(file.read())
         file.close()
     except FileNotFoundError:
-        print("まだはメモはないよ!")
+        print("まだメモはないよ!")
 
 if sys.argv[1:]:
     memo = "".join(sys.argv[1:]).strip()
