@@ -24,7 +24,7 @@ out=$(./memo)
 [ "$(echo "$out" | grep 'todolist')"  != "" ] || ng "$LINENO"
 
 out=$(./memo "")
-[ "$?" != "0" ] || ng "$LINENO"
+[ "$?" != "1" ] || ng "$LINENO"
 
 rm -f memo.txt
 out=$(./memo)

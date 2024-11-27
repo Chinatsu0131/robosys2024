@@ -22,11 +22,12 @@ def display():
         print("まだはメモはないよ!")
 
 if sys.argv[1:]:
-    memo = ""
-    for word in sys.argv[1:]:
-        memo += word + " "
-    memo = memo.strip()
+    memo = "".join(sys.argv[1:]).strip()
+    if not memo:
+        print("エラー: 空のメモは保存出来ない！", file=sys.stderr)
+        sys.exit(1)
 
     save(memo)
+
 else:
     display()
