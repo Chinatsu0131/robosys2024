@@ -19,15 +19,15 @@ out=$(cat memo.txt)
 out=$(cat memo.txt )
 [ "$(echo "$out" | grep 'todolist')" != "" ] || ng "$LINENO"
 
-out=$(./memo.py)
+out=$(./memo)
 [ "$(echo "$out" | grep '買い物リスト')" != "" ] || ng "$LINENO"
 [ "$(echo "$out" | grep 'todolist')"  != "" ] || ng "$LINENO"
 
-out=$(./memo.py "")
+out=$(./memo "")
 [ "$?" != "0" ] || ng "$LINENO"
 
 rm -f memo.txt
-out=$(./memo.py)
+out=$(./memo)
 [ "$(echo "$out" | grep 'まだメモはないよ！')" != "" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
