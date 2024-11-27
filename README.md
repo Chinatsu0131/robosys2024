@@ -1,14 +1,29 @@
 # robosys2024
 ロボットシステム学授業用
 
-# plusコマンド
+# memoコマンド
 ![test](https://github.com/Chinatsu0131/robosys2024/actions/workflows/test.yml/badge.svg)
 
-# memoコマンド
+## ダウンロード方法
+'''$ git clone https://github.com/Chinatsu0131/robosys2024.git
+   $ cd robosys2024'''
 
-- このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます.
-- このパッケージのコードは, 下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを, 本人の許可を得て自身の著作としたものです.
-    - (https://ryuichiueda.github.io/slides_marp/robosys2024/lesson3.html#1)
+クローンしてダウンロードを行ってください。その後にcdでディレクトリを変更してください。
+
+##使用方法
+コマンドをを実行する際に権限を付与する必要があるため、コマンドを最初に使用する時に以下のコマンドで権限を付与し、実行してください。
+
+'''$ chmod +x memo
+   $ ./memo <メモしたい内容>
+   メモを保存!
+   $ cat memo.txt
+　 [2024-11-24 15:35:28] <メモした内容> '''
+
+- **入力する際の注意点**
+  - ./memoのあとは半角の空白を入れてからメモする内容を入力するようにしてください。しない場合、エラーが出ます。
+ - memo.txtの内容を消したい場合は以下のコマンドで消すようにしてください。
+'''$ rm -f memo.txt'''
+
 ## 必要なソフトウェア
 - Python
   - テスト済みバージョン: 3.7～3.12
@@ -16,4 +31,6 @@
 ## テスト環境
 - Ubuntu 20.04.6 LTS
 
-©2024 Takumi Kobayashi
+## ライセンス
+- このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用>が許可されます。
+- ©2024 Takumi Kobayashi
