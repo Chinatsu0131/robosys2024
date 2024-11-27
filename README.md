@@ -7,7 +7,7 @@
 ## ダウンロード方法
 ```
 $ git clone https://github.com/Chinatsu0131/robosys2024.git
-a$ cd robosys2024
+$ cd robosys2024
 ```
 
 クローンしてダウンロードを行ってください。その後にcdでディレクトリを変更してください。
