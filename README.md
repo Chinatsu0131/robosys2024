@@ -4,7 +4,8 @@
 # memoコマンド
 ![test](https://github.com/Chinatsu0131/robosys2024/actions/workflows/test.yml/badge.svg)
 
-## ダウンロード方法
+## 使用方法
+リポジトリのURLは"https://github.com/Chinatsu0131/robosys2024"
 ```
 $ git clone https://github.com/Chinatsu0131/robosys2024.git
 $ cd robosys2024
@@ -12,7 +13,6 @@ $ cd robosys2024
 
 クローンしてダウンロードを行ってください。その後にcdでディレクトリを変更してください。
 
-## 使用方法
 コマンドをを実行する際に権限を付与する必要があるため、コマンドを最初に使用する時に以下のコマンドで権限を付与し、実行してください。
 
 ```
@@ -33,9 +33,9 @@ $ echo "list" | ./memo
 
 ## テスト環境
 - ローカル環境
- - Ubuntu 20.04.6 LTS
+  - Ubuntu 20.04.6 LTS
 - Github Actions
- - Ubuntu 22.04 LTS
+  - Ubuntu 22.04 LTS
 
 ## ライセンス
 - このソフトウェアパッケージは,3条項BSDライセンスの下,再頒布および使用が許可されます。
