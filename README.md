@@ -9,7 +9,7 @@
 ```
 $ git clone https://github.com/Chinatsu0131/robosys2024.git
 $ cd robosys2024
-https://github.com/Chinatsu0131/robosys2024```
+```
 
 クローンしてダウンロードを行ってください。その後にcdでディレクトリを変更してからコマンドを使用してください。
 コマンドをを実行する際に権限を付与する必要があるため、コマンドを最初に使用する時に以下のコマンドで権限を付与し、実行してください。
@@ -18,7 +18,7 @@ https://github.com/Chinatsu0131/robosys2024```
 $ chmod +x memo
 $ echo メモしたい内容 | ./memo
 メモを保存!
-$ echo "list" | ./memo
+$ echo list | ./memo
  [2024-11-24 15:35:28] <メモした内容> 
 ```
 
