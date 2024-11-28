@@ -21,13 +21,19 @@ def display():
     except FileNotFoundError:
         print("まだメモはないよ!")
 
-if sys.argv[1:]:
-    memo = "".join(sys.argv[1:]).strip()
-    if not memo:
+def main():
+    input_data = sys.stdin.read().strip()
+
+    if not input_data:
         print("エラー: 空のメモは保存出来ない！", file=sys.stderr)
         sys.exit(1)
 
-    save(memo)
+    if input_data == "list":
+        display()
 
-else:
-    display()
+    else:
+        save(input_data)
+
+if __name__ == "__main__":
+    main()
+  

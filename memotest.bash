@@ -11,23 +11,23 @@ res=0
 
 rm -f memo.txt
 
-./memo "買い物リスト"
+echo "買い物リスト" | ./memo
 out=$(cat memo.txt)
 [ "$(echo "$out" | grep '買い物リスト')" != "" ] || ng "$LINENO"
 
-./memo "todolist"
+echo "todolist" | ./memo
 out=$(cat memo.txt )
 [ "$(echo "$out" | grep 'todolist')" != "" ] || ng "$LINENO"
 
-out=$(./memo)
+out=$(echo "list" | ./memo)
 [ "$(echo "$out" | grep '買い物リスト')" != "" ] || ng "$LINENO"
 [ "$(echo "$out" | grep 'todolist')"  != "" ] || ng "$LINENO"
 
-out=$(./memo "")
+out=$(echo "" | ./memo )
 [ "$?" = "1" ] || ng "$LINENO"
 
 rm -f memo.txt
-out=$(./memo)
+out=$(echo "list" | ./memo)
 [ "$(echo "$out" | grep 'まだメモはないよ!')" != "" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
