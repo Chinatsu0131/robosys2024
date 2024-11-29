@@ -17,7 +17,6 @@ $ cd robosys2024
 ```
 $ chmod +x memo
 $ echo メモしたい内容 | ./memo
-メモを保存!
 $ echo list | ./memo
  [2024-11-24 15:35:28] <メモした内容> 
 ```
@@ -31,10 +30,9 @@ $ echo list | ./memo
   - テスト済みバージョン: 3.7～3.12
 
 ## テスト環境
-- ローカル環境
-  - Ubuntu 20.04.6 LTS
-- Github Actions
-  - Ubuntu 22.04 LTS
+- 対応OS: aUbuntu 20.04以降
+- CI/CD: Github Actions
+  
 
 ## ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます。

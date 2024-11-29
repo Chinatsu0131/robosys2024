@@ -9,8 +9,7 @@ def save(memo):
     file = open("memo.txt", "a")
     timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
     file.write(f"{timestamp} {memo}\n")
-    file.close()
-    print("メモを保存！")
+    file.close
 
 def display():
     print("=== メモ一覧 ===")
