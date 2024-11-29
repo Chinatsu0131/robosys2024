@@ -18,6 +18,7 @@ $ cd robosys2024
 $ chmod +x memo
 $ echo メモしたい内容 | ./memo
 $ echo list | ./memo
+=== メモ一覧 ===
  [2024-11-24 15:35:28] <メモした内容> 
 ```
 
