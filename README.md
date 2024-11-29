@@ -30,7 +30,7 @@ $ echo list | ./memo
   - テスト済みバージョン: 3.7～3.12
 
 ## テスト環境
-- 対応OS: aUbuntu 20.04以降
+- 対応OS: Ubuntu 20.04以降
 - CI/CD: Github Actions
   
 
