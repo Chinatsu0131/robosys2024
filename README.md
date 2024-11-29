@@ -32,9 +32,7 @@ $ echo list | ./memo
 
 ## テスト環境
 - 対応OS: Ubuntu 20.04以降
-- CI/CD: Github Actions
   
-
 ## ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます。
 - ©2024 Takumi Kobayashi
